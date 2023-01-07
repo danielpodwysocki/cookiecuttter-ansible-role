@@ -214,6 +214,7 @@
         tags: "{{ platform_tags }}"
         user_data: "{{ platform_user_data }}"
         wait: true
+        state: present
       vars:
         platform_security_groups: "{{ item.security_groups or [item.security_group_name] }}"
         platform_image_id:  '{{ item.image if item.image is defined else (ami_info.results[index].images | sort(attribute="creation_date", reverse=True))[0].image_id }}' 
