@@ -74,7 +74,7 @@ export AWS_INSTANCE_TYPE=t2.micro
 export VAGRANT_DEFAULT_BOX=generic/rocky9
 
 
-molecule <your command>
+molecule <your command> -s <aws|vagrant>
 ```
 
 
