@@ -63,6 +63,7 @@ export VAGRANT_DEFAULT_BOX=generic/rocky9
 ```
 
 If you want to run molecule commands freely, you can use the `molecule` command directly.
+Because we use scenarios, you must specify the one you're using with `-s`
 
 ```
 source venv/bin/activate
