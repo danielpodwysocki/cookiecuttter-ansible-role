@@ -1,6 +1,6 @@
 galaxy_info:
   author: your name
-  namespace: {{ role_namespace }}
+  namespace: {{ cookiecutter.role_namespace }}
   description: your role description
   company: your company (optional)
 

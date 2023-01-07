@@ -1,4 +1,4 @@
-# {{ role_namespace }}.{{ role_name }}
+# {{ cookiecutter.role_namespace }}.{{ cookiecutter.role_name }}
 
 A brief description of the role goes here.
 
