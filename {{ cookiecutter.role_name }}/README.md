@@ -28,5 +28,5 @@ All module and role dependencies should be handled in the role's requirements.ym
 
 ## Licensing and authorship
 
-{{ license }}
-Author: {{ author_first_name }} {{ author_last_name }} ({{ author_contact_info }})
+{{ cookiecutter.license }}
+Author: {{ cookiecutter.author_firstname }} {{ cookiecutter.author_lastname }} ({{ cookiecutter.author_contact_info }})
