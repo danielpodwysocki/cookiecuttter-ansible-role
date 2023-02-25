@@ -1,0 +1,7 @@
+exclude_files:
+  - venv/
+  - molecule/
+
+template_dir: docs/
+template: readme
+force_overwrite: True

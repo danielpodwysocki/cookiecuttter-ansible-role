@@ -7,3 +7,4 @@ molecule-ec2==0.4
 molecule-vagrant==1.0.0
 boto3==1.26.41
 botocore==1.29.41
+ansible-doctor==2.0.1

@@ -1,4 +1,4 @@
-.PHONY: dev converge_aws clean login_aws test_aws destroy_aws converge_vagrant test_vagrant destroy_vagrant
+.PHONY: dev converge_aws clean login_aws test_aws destroy_aws converge_vagrant test_vagrant destroy_vagrant docs
 
 
 export AWS_VPC_SUBNET_ID=subnet-0740a1003d80202ed
@@ -7,6 +7,10 @@ export AWS_AMI_ID=ami-0da0f91219b2ab4c1
 export AWS_REGION=eu-west-1
 export AWS_INSTANCE_TYPE=t2.micro
 export VAGRANT_DEFAULT_BOX=generic/rocky9
+
+docs: venv/bin/activate
+	@echo "Building docs"
+	@venv/bin/ansible-doctor
 
 venv/bin/activate:
 	python3 -m venv venv

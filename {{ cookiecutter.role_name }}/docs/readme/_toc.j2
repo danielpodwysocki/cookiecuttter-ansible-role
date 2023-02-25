@@ -2,10 +2,7 @@
 
 {% set var = role.var | default({}) %}
 {% if var %}
-- [Default Variables](#default-variables)
-{% for key, item in var | dictsort %}
-  - [{{ key }}](#{{ key }})
-{% endfor %}
+- [Role variables](#role-variables)
 {% endif %}
 {% if tag %}
 - [Discovered Tags](#discovered-tags)
