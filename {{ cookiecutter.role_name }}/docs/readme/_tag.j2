@@ -1,4 +1,4 @@
-{% set tag = role.tag | default({}) %}
+{% raw %}{% set tag = role.tag | default({}) %}
 {% if tag %}
 ## Discovered Tags
 {% for key, item in tag | dictsort %}
@@ -9,4 +9,4 @@
 &emsp;{{ item.description | safe_join(" ") | striptags }}
 {% endif %}
 {% endfor %}
-{% endif %}
+{% endif %}{% endraw %}

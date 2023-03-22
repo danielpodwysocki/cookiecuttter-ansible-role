@@ -1,4 +1,4 @@
-{% set todo = role.todo | default({}) %}
+{% raw %}{% set todo = role.todo | default({}) %}
 {% if todo %}
 ## Open Tasks
 
@@ -16,4 +16,4 @@
 {% endif %}
 {% endfor %}
 {% endfor %}
-{% endif %}
+{% endif %}{% endraw %}

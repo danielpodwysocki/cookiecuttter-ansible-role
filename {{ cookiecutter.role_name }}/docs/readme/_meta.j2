@@ -1,4 +1,4 @@
-{% set meta = role.meta | default({}) %}
+{% raw %}{% set meta = role.meta | default({}) %}
 {% if meta %}
 ## Dependencies
 
@@ -28,4 +28,4 @@ None.
 
 {{ meta.author.value | safe_join(" ") }}
 {% endif %}
-{% endif %}
+{% endif %}{% endraw %}

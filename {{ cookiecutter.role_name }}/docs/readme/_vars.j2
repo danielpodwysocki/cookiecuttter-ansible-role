@@ -1,4 +1,4 @@
-{% set var = role.var | default({}) %}
+{% raw %}{% set var = role.var | default({}) %}
 {% if var %}
 
 ## Role variables
@@ -6,4 +6,4 @@
 |:-----|:--------------|:------------|
 {% for key, item in var | dictsort %}| {{ key }} | {{ item.default | default('') }} | {{ item.description | default('') }} |
 {% endfor %}
-{% endif %}
+{% endif %}{% endraw %}

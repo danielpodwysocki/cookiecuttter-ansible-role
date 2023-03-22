@@ -1,4 +1,4 @@
-{% if not append | deep_get(role, "internal.append") %}
+{% raw %}{% if not append | deep_get(role, "internal.append") %}
 {% set meta = role.meta | default({}) %}
 # {{ meta.name.value | safe_join(" ") }}
 {% endif %}
@@ -27,4 +27,4 @@
 
 This repository comes in with a Makefile providing targets for testing & linting the role.
 
-For usage examples see: [CONTRIBUTING.md](CONTRIBUTING.md)
+For usage examples see: [CONTRIBUTING.md](CONTRIBUTING.md){% endraw %}
